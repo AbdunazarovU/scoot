@@ -1,0 +1,210 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    /*Site Colors*/
+    --accent-color:#fcb72b;
+    --text-color: #939caa;
+    --title-color: #495567;
+    --light-grey:#e5ecf4;
+    --snow:#f2f5f9;
+    --light-yellow:#fff4df;
+    --dark-grey:#333A44;
+    
+    /* FONTS */
+    --mono-font:"Space Mono","Arial",sans-serif;
+    --lexend-deca:"Lexend Deca","Arial",sans-serif;
+    
+}
+
+
+/*WEB FONTS RELATED*/
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"), 
+    url("../fonts/space-mono-v6-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"), 
+    url("../fonts/space-mono-v6-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url("../fonts/lexend-deca-v7-latin-regular.woff2") format("woff2")
+    url("../fonts/lexend-deca-v7-latin-regular.woff") format("woff"); 
+}
+
+
+/*GLOBAL STYLES*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Lexend Deca","Arial",sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--text-color);
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1156px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SITE-HEADER */
+.site-header__container{
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 21px;
+}
+
+.logo-link{
+    margin-right: 58px;
+}
+
+.logo{
+    display: block;
+}
+
+.site-nav__list{
+    display: flex;
+    list-style: none;
+}
+
+.site-nav__item{
+    margin-right: 32px;
+}
+
+.header-link{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.header-link:hover{
+    color: #fcb72b;
+}
+
+.site-nav__link{
+    color: #939caa;
+}
+
+.site-header__link{
+    padding: 14px 39px;
+    margin-left: auto;
+    color: #fff;
+    background-color: #fcb72b;
+}
+
+.site-header__link:hover{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #fcb72b;
+}
+
+
+/*  HERO */
+.hero{
+    color: #fff;
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                        url(../img/site-hero-bg-scoot.png);
+    background-size: 2600px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 305px) 89%;
+    padding-top: 153px;
+    padding-bottom: 152px;
+}
+
+.hero__title{
+    font-family: "Space Mono";
+    width: 500px;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.hero__text{
+    position: relative;
+    width: 405px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 95px;
+}
+
+.hero__text::before{
+    position: absolute;
+    top: 44px;
+    left: -245px;
+    content: "";
+    display: inline-block;
+    width: 203px;
+    height: 15px;
+    background-image: url(../img/site-hero-horizontal-line.svg);
+    background-size: contain;
+}
+
+.hero__text::after{
+    position: absolute;
+    top: 43px;
+    right: -485px;
+    content: "";
+    display: inline-block;
+    width: 450px;
+    height: 152px;
+    background-image: url(../img/yellow-arrow-to-right.svg);
+    background-size: 750px;
+    background-position: -299px 0;
+    background-repeat: no-repeat;
+}
+
+.hero__link{
+    position: relative;
+    margin-left: 95px;
+}
+
+.hero__link::after{
+    position: absolute;
+    top: -20px;
+    right: -1000px;
+    content: "";
+    display: inline-block;
+    width: 233px;
+    height: 62px;
+    background-image: url(../img/site-hero-bg-circles.svg);
+    background-size: contain;
+    
+}
