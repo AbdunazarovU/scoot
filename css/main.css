@@ -135,7 +135,7 @@ body{
 .hero{
     color: #fff;
     background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
-                        url(../img/site-hero-bg-scoot.png);
+    url(../img/site-hero-bg-scoot.png);
     background-size: 2600px;
     background-repeat: no-repeat;
     background-position: calc(50% + 305px) 89%;
@@ -206,5 +206,35 @@ body{
     height: 62px;
     background-image: url(../img/site-hero-bg-circles.svg);
     background-size: contain;
-    
+}
+
+
+/* ADVANTAGES */
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages__card{
+    width: 350px;
+}
+
+.advantages__card:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+.advantages__title{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Space Mono";
+    line-height: 28px;
+    letter-spacing: -1.07143px; 
+    color: #495567;
+}
+
+.advantages__text{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
 }
