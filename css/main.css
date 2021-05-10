@@ -68,7 +68,7 @@ body{
 }
 
 .container{
-    max-width: 1156px;
+    width: 1156px;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: auto;
@@ -268,4 +268,156 @@ body{
     line-height: 25px;
     color: #939CAA;
     margin: 0;
+}
+
+
+/* OUR VALUES */
+.our-values__list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 40px;
+    margin: 0;
+    list-style: none;
+}
+
+.our-values__item{
+    display: block;
+    margin-bottom: 160px;
+}
+
+.our-values__container{
+    position: relative;
+    width: 445px;
+    padding-top: 67px;
+    padding-bottom: 66px;
+}
+
+.our-values__container::after{
+    position: absolute;
+    top: 0;
+    right: -1210px;
+    content: "";
+    display: inline-block;
+    width: 990px;
+    height: 445px;
+    background-repeat: no-repeat;
+}
+
+.telemetry::after{
+    background-image: url(../img/easu-to-use-riding-telemetry.png);
+}
+
+.telemetry::before{
+    position: absolute;
+    bottom: 0;
+    right: -830px;
+    content: "";
+    display: inline-block;
+    width: 739px;
+    height: 150px;
+    background-image: url(../img/yellow-arrow-to-left.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.near-city{
+    margin-left: auto;
+}
+
+.near-city::after{
+    left: -1190px;
+    background-image: url(../img/Coming-to-a-city-near-you.png);
+}
+
+.near-city::before{
+    position: absolute;
+    top: 0;
+    right: 925px;
+    content: "";
+    display: inline-block;
+    width: 739px;
+    height: 150px;
+    background-image: url(../img/yellow-arrow-to-right.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.payment::after{
+    background-image: url(../img/zero-hassle-payments.png);
+}
+
+.payment::before{
+    position: absolute;
+    top: 85px;
+    right: -1214px;
+    content: "";
+    display: inline-block;
+    width: 739px;
+    height: 150px;
+    background-image: url(../img/yellow-arrow-to-left.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.our-values__title{
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.our-values__text{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+/* SITE-FOOTER */
+/* SIGN UP */
+.sign-up{
+    background-color: var(--title-color);
+}
+
+.sign-up__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+
+.sign-up__title{
+    width: 415px;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #fff;
+    margin: 0;
+    margin-right: auto;
+}
+
+.sign-up__list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-up__item{
+    margin-left: 18px;
+}
+
+.sign-up__img{
+    display: block;
 }
