@@ -75,6 +75,16 @@ body{
     margin-right: auto;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 
 /* SITE-HEADER */
 .site-header__container{
@@ -461,4 +471,312 @@ body{
 
 .faq__item-icon{
     margin-left: 24px;
+}
+
+
+/* PAGE ABOUT */
+.about-info{
+    padding: 72px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("../img/about-bg.png");
+    background-size: cover;
+    margin-bottom: 120px;
+}
+.about-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    font-family:"Space Mono","Arial",sans-serif;
+    color: #fff;
+    position: relative;
+}
+.about-title::after{
+    content: "";
+    width: 234px;
+    height: 63px;
+    position: absolute;
+    top: 0;
+    left: 1080px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("../img/site-hero-bg-circles.svg");
+}
+
+
+/* SERVICES */
+.service{
+    width: 445px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 160px;
+}
+.service-info__title{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: var(--mono-font);
+    color: var(--title-color);
+    letter-spacing: -2.14286px;
+    position: relative;
+}
+.service-info__text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+.service-info__btn{
+    display: inline-block;
+    text-decoration: none;
+}
+.service-info__title::after{
+    content: "";
+    width: 1080px;
+    height: 445px;
+    display: block;
+    position: absolute;
+    left: 135%;
+    top: -70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+}
+.service-info__title::before{
+    content: "";
+    width: 735px;
+    height: 138px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.easy-title::before{
+    background-image: url("../img/yellow-arrow-to-left.svg");
+    position: absolute;
+    left: 125%;
+    top: 220px;
+    z-index: 1;
+}
+
+.easy-title::after{
+    background-image: url("../img/easu-to-use-riding-telemetry.png");
+}
+.coming-title::before{
+    background-image: url("../img/yellow-arrow-to-right.svg");
+    position: absolute;
+    left: -250%;
+    top: -70px;
+    z-index: 1;
+}
+
+.coming-title::after{
+    background-image: url("../img/coming-to-a-city-near-you.png");
+    position: absolute;
+    left: -280%;
+    top: -70px;
+}
+.payment-title::before{
+    background-image: url("../img/yellow-arrow-to-left.svg");
+    position: absolute;
+    left: 125%;
+    top: 220px;
+    z-index: 1;
+}
+
+.payment-title::after{
+    background-image: url("../img/zero-hassle-payments.png");
+   
+}
+.coming-info{
+    margin-left: auto;
+}
+
+
+/* VALUE_SECTION */
+.values{
+    margin-bottom: 120px;
+}
+.values__title{
+    margin: 0;
+    margin-bottom: 48px;
+    font-weight: bold;
+    color:var(--title-color);
+    font-family: var(--mono-font);
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+}
+.values__container{
+    display: flex;
+    align-items: center;
+}
+.value-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.value-item{
+    width: 350px;
+    text-align: center;
+}
+.value-list:not(:last-child){
+    margin-right: 30px;
+}
+.number-value{
+    margin-bottom: 32px;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: inline-block;
+    font-weight: bold;
+    font-family: var(--mono-font);
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: var(--title-color);
+}
+
+.value-item__title{
+    margin: 0;
+    margin-bottom: 27px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: var(--mono-font);
+    line-height: 28px;
+    color: var(--title-color);
+    text-align: center;
+    letter-spacing: -1.07143px;
+}
+.value-item__text{
+    margin: 0;
+}
+.value-list::before{
+    content: "";
+    width: 240px;
+    height: 240px;
+    display: block;
+    background-position: center center;
+    position: relative;
+    top: 50px;
+    right: -13%;
+    z-index: -1;
+    
+}
+.value-tech::before{
+    background-image: url("../img/phone-writing.png");
+    
+    background-repeat: no-repeat;
+}
+.value-integrity::before{
+    background-image: url("../img/riding-bike.png");
+    
+    background-repeat: no-repeat;
+}
+.value-community::before{
+    background-image: url("../img/people-walk.png");
+    
+    background-repeat: no-repeat;
+}
+
+/* FAQS__SECTION */
+.faqs-section{
+    padding-bottom: 160px;
+}
+
+.faqs-section__title{
+    margin: 0;
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--title-color);
+    font-family: var(--mono-font);
+    text-align: center;
+    letter-spacing: -2.14286px;
+}
+.how-it-works{
+    display: flex;
+    align-items: start;
+}
+.how-it-works:not(:last-child){
+    margin-bottom: 64px;
+}
+.how-it-works__title{
+    margin: 0;
+    color: var(--title-color);
+    font-family: var(--mono-font);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+}
+.work-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 730px;
+    margin-left: auto;
+}
+.work-item{
+    padding: 32px 40px;
+    background-color: var(--snow);
+    color: var(--title-color);
+    position: relative;
+}
+.work-item::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("../img/down.png");
+    position: absolute;
+    top: 42px;
+    right: 30px;
+}
+.work-item:active::after{
+    transition:ease 0.3s;
+    transform: rotate(180deg);
+}
+
+.work-item:hover{
+    background-color: var(--light-yellow);
+}
+
+.work-item:active .work-item__text{
+    display: block;
+    margin-top: 24px;
+}
+
+.work-item:not(:last-child){
+    margin-bottom: 16px;
+}
+.work-item__title{
+    margin: 0;
+    font-weight: bold;
+    font-family: var(--mono-font);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+}
+.work-item__text{
+    margin: 0;
+    display: none;
+}
+
+.safe-driving{
+    display: flex;
+    align-items: start;
 }
