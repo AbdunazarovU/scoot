@@ -684,9 +684,9 @@ body{
 }
 .value-community::before{
     background-image: url("../img/people-walk.png");
-    
     background-repeat: no-repeat;
 }
+
 
 /* FAQS__SECTION */
 .faqs-section{
@@ -704,13 +704,16 @@ body{
     text-align: center;
     letter-spacing: -2.14286px;
 }
+
 .how-it-works{
     display: flex;
     align-items: start;
 }
+
 .how-it-works:not(:last-child){
     margin-bottom: 64px;
 }
+
 .how-it-works__title{
     margin: 0;
     color: var(--title-color);
@@ -720,6 +723,7 @@ body{
     line-height: 48px;
     letter-spacing: -1.78571px;
 }
+
 .work-list{
     padding: 0;
     margin: 0;
@@ -727,12 +731,14 @@ body{
     width: 730px;
     margin-left: auto;
 }
+
 .work-item{
     padding: 32px 40px;
     background-color: var(--snow);
     color: var(--title-color);
     position: relative;
 }
+
 .work-item::after{
     content: "";
     width: 16px;
@@ -746,6 +752,7 @@ body{
     top: 42px;
     right: 30px;
 }
+
 .work-item:active::after{
     transition:ease 0.3s;
     transform: rotate(180deg);
@@ -763,6 +770,7 @@ body{
 .work-item:not(:last-child){
     margin-bottom: 16px;
 }
+
 .work-item__title{
     margin: 0;
     font-weight: bold;
@@ -771,6 +779,7 @@ body{
     line-height: 28px;
     letter-spacing: -1.07143px;
 }
+
 .work-item__text{
     margin: 0;
     display: none;
@@ -779,4 +788,155 @@ body{
 .safe-driving{
     display: flex;
     align-items: start;
+}
+
+
+/* CAREERS_JOBS_SECTION */
+.careers-jobs{
+    padding-bottom: 160px;
+}
+
+.jobs-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.jobs-item{
+    padding: 32px 40px;
+    background-color:var(--snow);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobs-item:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.jobs-item__title{
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    font-family: var(--mono-font);
+    color: var(--title-color);
+}
+
+.jobs-item__text{
+    margin: 0;
+    color: var(--title-color);
+}
+
+.jobs-btn{
+    padding: 14px 67px;
+    text-decoration: none;
+}
+
+
+/* MAP_SECTION */
+.map-section{
+    margin-bottom: 100px;
+}
+
+.map-link img{
+    display: block;
+}
+
+.map-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.map-item{
+    padding:22px 38px;
+    display: inline-block;
+    background-color: var(--accent-color);
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    position: relative;
+}
+
+.map-item__new-york{
+    position: absolute;
+    top: -450px;
+    left: 100px;
+}
+
+.map-item__jakarta{
+    position: absolute;
+    top: -320px;
+    right: 180px;
+}
+
+.map-item__london{
+    position: absolute;
+    top: -530px;
+    left: 430px;
+}
+
+.map-item__yokohama{
+    position: absolute;
+    top: -480px;
+    right: 80px;
+}
+
+.map-item__link{
+    color: var(--title-color);
+    font-family: var(--mono-font);
+    text-decoration: none;
+}
+
+.map-item::after{
+    content: "";
+    height: 24px;
+    width: 24px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 60px;
+    background-color: var(--accent-color);
+    transform: rotate(45deg);
+}
+
+
+/* LISTED__SECTION */
+.listed{
+    padding-bottom: 120px;
+}
+
+.listed__container{
+    display: flex;
+    align-items: center;
+}
+
+.listed-title{
+    width: 352px;
+    margin: 0;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--title-color);
+    font-family: var(--mono-font);
+}
+
+.listed-text{
+    width: 445px;
+    margin: 0;
+    margin-right: 105px;
+}
+
+.listed-btn{
+    white-space: nowrap;
+    padding: 14px 44px;
+    text-decoration: none;
 }
